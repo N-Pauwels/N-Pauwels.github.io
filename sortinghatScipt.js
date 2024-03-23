@@ -66,7 +66,7 @@ const questions = [
     },
 ]
 //initialize button 1
-button1.onClick = showQuestion(currentQuestion);
+button1.onclick = showQuestion(currentQuestion);
 
 function showQuestion(question){
     hatText.innerText = "The hat awaits your answer.";
