@@ -13,7 +13,7 @@ const ravenclawPoints = 0;
 const questions = [
     {
         name: "question1",
-        question: "What's your favourite class?"
+        question: "What's your favourite class?",
         answers: [
             {
                 button: "Defense against the dark arts",
@@ -36,3 +36,4 @@ const questions = [
         ]
     },
 ]
+console.log(questions[0].answers[0].points.gryffindor);
