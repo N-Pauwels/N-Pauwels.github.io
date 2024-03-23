@@ -17,7 +17,7 @@ body {
   max-height: 400px;
   background: linear-gradient(90deg, rgb(255, 38, 0), rgb(255, 234, 0), rgb(0, 128, 17),rgb(0, 140, 255));
   color: #ffffff;
-  margin: auto;
+  margin: 40% auto 0 px;
   padding: 10px;
 }
 
