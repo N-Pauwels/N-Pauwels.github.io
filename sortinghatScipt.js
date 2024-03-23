@@ -6,10 +6,10 @@ const button5 = document.querySelector("#button5");
 const button6 = document.querySelector("#button6");
 const text = document.querySelector("#text");
 const hatText = document.querySelector("#hatText");
-const gryffindorPoints = 0;
-const hufflepuffPoints = 0;
-const slytherinPoints = 0;
-const ravenclawPoints = 0;
+let gryffindorPoints = 0;
+let hufflepuffPoints = 0;
+let slytherinPoints = 0;
+let ravenclawPoints = 0;
 let currentQuestion = 0;
 const buttons = [button1, button2, button3, button4, button5, button6]
 const questions = [
@@ -66,32 +66,46 @@ const questions = [
     },
 ]
 //initialize button 1
-button1.onclick = showQuestion(currentQuestion);
+button1.addEventListener("click",showQuestion);
 
-function showQuestion(question){
+function showQuestion(){
     hatText.innerText = "The hat awaits your answer.";
-    text.innerText = questions[question].question;
-    updateButtons(question);
+    text.innerText = questions[currentQuestion].question;
+    updateButtons(currentQuestion);
 }
 function updateButtons(current){
+  console.log(questions[current].answers.length)
     for(let i = 0; i<questions[current].answers.length;i++){
         buttons[i].innerText = questions[current].answers[i].button;
-        buttons[i].display = "initial"
-        buttons[i].onclick = updateOnClick(current,i);
+        buttons[i].style.display = "initial"
+        buttons[i].addEventListener("click",()=>{updateOnClick(current,i)});
     }
 }
 function updateOnClick(current,j){
-    gryffindorPoints += questions[current].answers[j].button.points.gryffindor;
-    hufflepuffPoints += questions[current].answers[j].button.points.hufflepuff;
-    slytherinPoints += questions[current].answers[j].button.points.slytherin;
-    ravenclawPoints += questions[current].answers[j].button.points.ravenclaw;
+    gryffindorPoints += questions[current].answers[j].points.gryffindor;
+    hufflepuffPoints += questions[current].answers[j].points.hufflepuff;
+    slytherinPoints += questions[current].answers[j].points.slytherin;
+    ravenclawPoints += questions[current].answers[j].points.ravenclaw;
     hatText.innerText = "The hat thanks you for your answer.";
     text.innerText = `You have selected ${questions[current].answers[j].button}. Good choice!`;
     resetButtons();
 }
 function resetButtons(){
     for(let i=1;i<buttons.length;i++){
-        buttons[i].display = "none"
+        buttons[i].style.display = "none";
     }
-    buttons[0].innerText = "Continue"
+    buttons[0].innerText = "Continue";
+    buttons[0].onclick = nextQuestion;
+}
+function nextQuestion(){
+        if(currentQuestion >= questions.length-1){
+        showResult();
+    } else{
+        currentQuestion++;
+    }
+}
+function showResult(){
+    const pointsArray = [gryffindorPoints,hufflepuffPoints,slytherinPoints,ravenclawPoints];
+    pointsArray.sort();
+    text.innerText = `Your house is ${pointsArray[0]}`
 }
