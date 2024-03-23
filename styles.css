@@ -39,3 +39,6 @@ button {
   border: 3px solid #feac32;
   display: none;
 }
+#button1{
+  display: initial
+}
