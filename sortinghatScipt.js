@@ -77,10 +77,10 @@ function updateButtons(current){
     for(let i = 0; i<questions[current].answers.length;i++){
         buttons[i].innerText = questions[current].answers[i].button;
         buttons[i].display = "initial"
-        updateOnClick(buttons[i],current,i);
+        buttons[i].onclick = updateOnClick(current,i);
     }
 }
-function updateOnClick(button,current,j){
+function updateOnClick(current,j){
     gryffindorPoints += questions[current].answers[j].button.points.gryffindor;
     hufflepuffPoints += questions[current].answers[j].button.points.hufflepuff;
     slytherinPoints += questions[current].answers[j].button.points.slytherin;
