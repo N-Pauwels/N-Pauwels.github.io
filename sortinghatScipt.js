@@ -10,6 +10,8 @@ const gryffindorPoints = 0;
 const hufflepuffPoints = 0;
 const slytherinPoints = 0;
 const ravenclawPoints = 0;
+let currentQuestion = 0;
+const buttons = [button1, button2, button3, button4, button5, button6]
 const questions = [
     {
         name: "question1",
@@ -18,22 +20,56 @@ const questions = [
             {
                 button: "Defense against the dark arts",
                 points: {
-                    gryffindor: 0,
+                    gryffindor: 5,
                     hufflepuff: 0,
-                    slytherin: 0,
+                    slytherin: 10,
                     ravenclaw: 0
                 }
             },
             {
                 button: "Charms",
                 points: {
-                    gryffindor: 0,
+                    gryffindor: 5,
                     hufflepuff: 0,
                     slytherin: 0,
+                    ravenclaw: 10
+                }
+            },
+            {
+                button: "Potions",
+                points: {
+                    gryffindor: 10,
+                    hufflepuff: 0,
+                    slytherin: 5,
                     ravenclaw: 0
+                }
+            },
+            {
+                button: "Herbology",
+                points: {
+                    gryffindor: 0,
+                    hufflepuff: 10,
+                    slytherin: 5,
+                    ravenclaw: 0
+                }
+            },
+            {
+                button: "Beasts",
+                points: {
+                    gryffindor: 0,
+                    hufflepuff: 10,
+                    slytherin: 0,
+                    ravenclaw: 5
                 }
             },
         ]
     },
 ]
-console.log(questions[0].answers[0].points.gryffindor);
+
+function showQuestion(currentQuestion){
+    hatText.innerText = "The hat awaits your answer.";
+    text.innerText = questions[currentQuestion].question;
+    for (let i=0;i<question[currentQuestion].answers.length;i++){
+        buttons[i].innerText = 
+    }
+}
