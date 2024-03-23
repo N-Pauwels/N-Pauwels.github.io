@@ -3,7 +3,7 @@ body {
   background-image: url("../Images/Hogwarts.jpg");
   background-position-x: center;
   background-repeat: no-repeat;
-  background-position-y: 50%;
+  background-position-y: 100%;
 }
 
 #text {
@@ -15,7 +15,7 @@ body {
 #game {
   max-width: 500px;
   max-height: 400px;
-  background: linear-gradient(rgb(255, 38, 0), rgb(255, 234, 0), rgb(0, 128, 17),rgb(0, 140, 255));
+  background: linear-gradient(90deg, rgb(255, 38, 0), rgb(255, 234, 0), rgb(0, 128, 17),rgb(0, 140, 255));
   color: #ffffff;
   margin: 30px auto 0px;
   padding: 10px;
@@ -39,4 +39,5 @@ button {
   background-color: #feac32;
   background-image: linear-gradient(#fecc4c, #ffac33);
   border: 3px solid #feac32;
+  display: none;
 }
