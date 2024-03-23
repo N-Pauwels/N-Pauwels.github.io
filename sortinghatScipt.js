@@ -74,7 +74,24 @@ function showQuestion(question){
     updateButtons(question);
 }
 function updateButtons(current){
-    for(let i = 0; i<questions[current].answers.length){
+    for(let i = 0; i<questions[current].answers.length;i++){
         buttons[i].innerText = questions[current].answers[i].button;
+        buttons[i].display = "initial"
+        updateOnClick(buttons[i],current,i);
     }
+}
+function updateOnClick(button,current,j){
+    gryffindorPoints += questions[current].answers[j].button.points.gryffindor;
+    hufflepuffPoints += questions[current].answers[j].button.points.hufflepuff;
+    slytherinPoints += questions[current].answers[j].button.points.slytherin;
+    ravenclawPoints += questions[current].answers[j].button.points.ravenclaw;
+    hatText.innerText = "The hat thanks you for your answer.";
+    text.innerText = `You have selected ${questions[current].answers[j].button}. Good choice!`;
+    resetButtons();
+}
+function resetButtons(){
+    for(let i=1;i<buttons.length;i++){
+        buttons[i].display = "none"
+    }
+    buttons[0].innerText = "Continue"
 }
