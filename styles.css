@@ -3,7 +3,7 @@ body {
   background-image: url("../Images/Hogwarts.jpg");
   background-position-x: center;
   background-repeat: no-repeat;
-  background-position-y: 100%;
+  background-position-y: 0%;
 }
 
 #text {
@@ -21,6 +21,7 @@ body {
   padding: 10px;
   position: absolute;
   top: 50%;
+  left: 50%;
 }
 
 #controls,

@@ -6,4 +6,33 @@ const button5 = document.querySelector("#button5");
 const button6 = document.querySelector("#button6");
 const text = document.querySelector("#text");
 const hatText = document.querySelector("#hatText");
-const questions
+const gryffindorPoints = 0;
+const hufflepuffPoints = 0;
+const slytherinPoints = 0;
+const ravenclawPoints = 0;
+const questions = [
+    {
+        name: "question1",
+        question: "What's your favourite class?"
+        answers: [
+            {
+                button: "Defense against the dark arts",
+                points: {
+                    gryffindor: 0,
+                    hufflepuff: 0,
+                    slytherin: 0,
+                    ravenclaw: 0
+                }
+            },
+            {
+                button: "Charms",
+                points: {
+                    gryffindor: 0,
+                    hufflepuff: 0,
+                    slytherin: 0,
+                    ravenclaw: 0
+                }
+            },
+        ]
+    },
+]
