@@ -15,7 +15,7 @@ body {
 #game {
   max-width: 500px;
   max-height: 400px;
-  background-color: #ffffff;
+  background: linear-gradient(rgb(255, 38, 0), rgb(255, 234, 0), rgb(0, 128, 17),rgb(0, 140, 255));
   color: #ffffff;
   margin: 30px auto 0px;
   padding: 10px;
