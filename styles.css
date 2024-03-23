@@ -1,8 +1,9 @@
 body {
   background-color: #0a0a23;
-  background-image: url(./Images/Hogwarts.jpg);
-  background-position: center;
+  background-image: url("../Images/Hogwarts.jpg");
+  background-position-x: center;
   background-repeat: no-repeat;
+  background-position-y: 50%;
 }
 
 #text {
@@ -18,6 +19,8 @@ body {
   color: #ffffff;
   margin: 30px auto 0px;
   padding: 10px;
+  position: absolute;
+  top: 50%;
 }
 
 #controls,
@@ -26,15 +29,6 @@ body {
   padding: 5px;
   color: #0a0a23;
 }
-
-#monsterStats {
-  display: none;
-  border: 1px solid #0a0a23;
-  padding: 5px;
-  color: #ffffff;
-  background-color: #c70d0d;
-}
-
 .stat {
   padding-right: 10px;
 }
