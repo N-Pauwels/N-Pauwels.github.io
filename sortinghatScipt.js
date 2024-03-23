@@ -66,10 +66,12 @@ const questions = [
     },
 ]
 
-function showQuestion(currentQuestion){
+function showQuestion(question){
     hatText.innerText = "The hat awaits your answer.";
-    text.innerText = questions[currentQuestion].question;
-    for (let i=0;i<question[currentQuestion].answers.length;i++){
-        buttons[i].innerText = 
+    text.innerText = questions[question].question;
+}
+function updateButtons(buttons,questions,current){
+    for(let i = 0; i<questions[current].answers.length){
+        buttons[i].innerText = questions[current].answers[i].button;
     }
 }
