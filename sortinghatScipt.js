@@ -65,12 +65,15 @@ const questions = [
         ]
     },
 ]
+//initialize button 1
+button1.onClick = showQuestion(currentQuestion);
 
 function showQuestion(question){
     hatText.innerText = "The hat awaits your answer.";
     text.innerText = questions[question].question;
+    updateButtons(question);
 }
-function updateButtons(buttons,questions,current){
+function updateButtons(current){
     for(let i = 0; i<questions[current].answers.length){
         buttons[i].innerText = questions[current].answers[i].button;
     }
