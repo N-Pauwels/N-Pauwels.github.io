@@ -240,118 +240,118 @@ const questions = [
     },
     {
         name: "question5",
-        question: "What's your favourite beast?",
+        question: "What would be your dreamjob?",
         answers: [
             {
-                button: "Dragon",
+                button: "Hogwarts Head master",
                 points: {
-                    gryffindor: 5,
-                    hufflepuff: 0,
-                    slytherin: 10,
-                    ravenclaw: 0
+                    gryffindor: 10,
+                    hufflepuff: 10,
+                    slytherin: 0,
+                    ravenclaw: 10
                 }
             },
             {
-                button: "Hyppogryff",
+                button: "Auror",
                 points: {
-                    gryffindor: 5,
+                    gryffindor: 15,
                     hufflepuff: 0,
                     slytherin: 0,
                     ravenclaw: 10
                 }
             },
             {
-                button: "Acromantula",
+                button: "Minister of Magic",
                 points: {
-                    gryffindor: 10,
+                    gryffindor: 5,
                     hufflepuff: 0,
                     slytherin: 5,
                     ravenclaw: 0
                 }
             },
             {
-                button: "Phoenix",
+                button: "Hogwarts teacher",
                 points: {
                     gryffindor: 5,
+                    hufflepuff: 5,
+                    slytherin: 0,
+                    ravenclaw: 10
+                }
+            },
+            {
+                button: "Beast caretaker",
+                points: {
+                    gryffindor: 0,
                     hufflepuff: 10,
                     slytherin: 0,
                     ravenclaw: 0
                 }
             },
             {
-                button: "Basilisk",
+                button: "Dark wizard",
                 points: {
                     gryffindor: 0,
                     hufflepuff: 0,
-                    slytherin: 15,
+                    slytherin: 20,
                     ravenclaw: 0
-                }
-            },
-            {
-                button: "Centaur",
-                points: {
-                    gryffindor: 0,
-                    hufflepuff: 5,
-                    slytherin: 0,
-                    ravenclaw: 10
                 }
             }
         ]
     },
     {
         name: "question6",
-        question: "What's your favourite beast?",
+        question: "What's your favourite character?",
         answers: [
             {
-                button: "Dragon",
+                button: "Dumbledore",
                 points: {
-                    gryffindor: 5,
+                    gryffindor: 10,
+                    hufflepuff: 5,
+                    slytherin: 0,
+                    ravenclaw: 5
+                }
+            },
+            {
+                button: "Voldemort",
+                points: {
+                    gryffindor: 0,
                     hufflepuff: 0,
-                    slytherin: 10,
+                    slytherin: 20,
                     ravenclaw: 0
                 }
             },
             {
-                button: "Hyppogryff",
+                button: "Sirius Black",
                 points: {
-                    gryffindor: 5,
+                    gryffindor: 10,
+                    hufflepuff: 0,
+                    slytherin: 0,
+                    ravenclaw: 0
+                }
+            },
+            {
+                button: "Cedric Diggory",
+                points: {
+                    gryffindor: 0,
+                    hufflepuff: 20,
+                    slytherin: 0,
+                    ravenclaw: 0
+                }
+            },
+            {
+                button: "Luna Lovegood",
+                points: {
+                    gryffindor: 0,
                     hufflepuff: 0,
                     slytherin: 0,
                     ravenclaw: 10
                 }
             },
             {
-                button: "Acromantula",
-                points: {
-                    gryffindor: 10,
-                    hufflepuff: 0,
-                    slytherin: 5,
-                    ravenclaw: 0
-                }
-            },
-            {
-                button: "Phoenix",
-                points: {
-                    gryffindor: 5,
-                    hufflepuff: 10,
-                    slytherin: 0,
-                    ravenclaw: 0
-                }
-            },
-            {
-                button: "Basilisk",
+                button: "Gilderoy Lockhart",
                 points: {
                     gryffindor: 0,
                     hufflepuff: 0,
-                    slytherin: 15,
-                    ravenclaw: 0
-                }
-            },
-            {
-                button: "Centaur",
-                points: {
-                    gryffindor: 0,
-                    hufflepuff: 5,
                     slytherin: 0,
                     ravenclaw: 10
                 }
@@ -360,55 +360,55 @@ const questions = [
     },
     {
         name: "question7",
-        question: "What's your favourite beast?",
+        question: "What's your favourite spell?",
         answers: [
             {
-                button: "Dragon",
+                button: "Stupify",
                 points: {
-                    gryffindor: 5,
+                    gryffindor: 0,
+                    hufflepuff: 0,
+                    slytherin: 0,
+                    ravenclaw: 0
+                }
+            },
+            {
+                button: "Imperio",
+                points: {
+                    gryffindor: 0,
                     hufflepuff: 0,
                     slytherin: 10,
                     ravenclaw: 0
                 }
             },
             {
-                button: "Hyppogryff",
+                button: "Bombarda",
                 points: {
-                    gryffindor: 5,
+                    gryffindor: 10,
+                    hufflepuff: 0,
+                    slytherin: 0,
+                    ravenclaw: 0
+                }
+            },
+            {
+                button: "Levioso",
+                points: {
+                    gryffindor: 0,
+                    hufflepuff: 10,
+                    slytherin: 0,
+                    ravenclaw: 10
+                }
+            },
+            {
+                button: "Glacius",
+                points: {
+                    gryffindor: 0,
                     hufflepuff: 0,
                     slytherin: 0,
                     ravenclaw: 10
                 }
             },
             {
-                button: "Acromantula",
-                points: {
-                    gryffindor: 10,
-                    hufflepuff: 0,
-                    slytherin: 5,
-                    ravenclaw: 0
-                }
-            },
-            {
-                button: "Phoenix",
-                points: {
-                    gryffindor: 5,
-                    hufflepuff: 10,
-                    slytherin: 0,
-                    ravenclaw: 0
-                }
-            },
-            {
-                button: "Basilisk",
-                points: {
-                    gryffindor: 0,
-                    hufflepuff: 0,
-                    slytherin: 15,
-                    ravenclaw: 0
-                }
-            },
-            {
-                button: "Centaur",
+                button: "Arresto Momentum",
                 points: {
                     gryffindor: 0,
                     hufflepuff: 5,
@@ -420,46 +420,46 @@ const questions = [
     },
     {
         name: "question8",
-        question: "What's your favourite beast?",
+        question: "Which character would you take on a date?",
         answers: [
             {
-                button: "Dragon",
+                button: "Draco Malfoy",
                 points: {
-                    gryffindor: 5,
+                    gryffindor: 0,
                     hufflepuff: 0,
                     slytherin: 10,
                     ravenclaw: 0
                 }
             },
             {
-                button: "Hyppogryff",
+                button: "Harry Potter",
                 points: {
-                    gryffindor: 5,
+                    gryffindor: 10,
+                    hufflepuff: 0,
+                    slytherin: 0,
+                    ravenclaw: 0
+                }
+            },
+            {
+                button: "Hermione Granger",
+                points: {
+                    gryffindor: 10,
+                    hufflepuff: 0,
+                    slytherin: 0,
+                    ravenclaw: 0
+                }
+            },
+            {
+                button: "Luna Lovegood",
+                points: {
+                    gryffindor: 0,
                     hufflepuff: 0,
                     slytherin: 0,
                     ravenclaw: 10
                 }
             },
             {
-                button: "Acromantula",
-                points: {
-                    gryffindor: 10,
-                    hufflepuff: 0,
-                    slytherin: 5,
-                    ravenclaw: 0
-                }
-            },
-            {
-                button: "Phoenix",
-                points: {
-                    gryffindor: 5,
-                    hufflepuff: 10,
-                    slytherin: 0,
-                    ravenclaw: 0
-                }
-            },
-            {
-                button: "Basilisk",
+                button: "Peter Pettigrew",
                 points: {
                     gryffindor: 0,
                     hufflepuff: 0,
@@ -468,12 +468,12 @@ const questions = [
                 }
             },
             {
-                button: "Centaur",
+                button: "Dobby",
                 points: {
-                    gryffindor: 0,
+                    gryffindor: 5,
                     hufflepuff: 5,
                     slytherin: 0,
-                    ravenclaw: 10
+                    ravenclaw: 5
                 }
             }
         ]
