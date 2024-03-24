@@ -61,12 +61,12 @@ const questions = [
                     slytherin: 0,
                     ravenclaw: 5
                 }
-            },
+            }
         ]
     },
 ]
 //initialize button 1
-button1.addEventListener("click",showQuestion);
+button1.onclick = showQuestion;
 
 function showQuestion(){
     hatText.innerText = "The hat awaits your answer.";
@@ -78,14 +78,18 @@ function updateButtons(current){
     for(let i = 0; i<questions[current].answers.length;i++){
         buttons[i].innerText = questions[current].answers[i].button;
         buttons[i].style.display = "initial"
-        buttons[i].addEventListener("click",()=>{updateOnClick(current,i)});
+        buttons[i].onclick = ()=>{updateOnClick(current,i)};
     }
 }
 function updateOnClick(current,j){
     gryffindorPoints += questions[current].answers[j].points.gryffindor;
+    console.log('gryffindor'+gryffindorPoints);
     hufflepuffPoints += questions[current].answers[j].points.hufflepuff;
+    console.log('hufflepuff' + hufflepuffPoints);
     slytherinPoints += questions[current].answers[j].points.slytherin;
+    console.log('slytherin' + slytherinPoints);
     ravenclawPoints += questions[current].answers[j].points.ravenclaw;
+    console.log('ravenclaw' + ravenclawPoints);
     hatText.innerText = "The hat thanks you for your answer.";
     text.innerText = `You have selected ${questions[current].answers[j].button}. Good choice!`;
     resetButtons();
@@ -96,16 +100,46 @@ function resetButtons(){
     }
     buttons[0].innerText = "Continue";
     buttons[0].onclick = nextQuestion;
+    console.log('current question' + currentQuestion);
+    console.log('questions'+questions.length)
 }
 function nextQuestion(){
+    console.log("check");
         if(currentQuestion >= questions.length-1){
         showResult();
     } else{
         currentQuestion++;
+        console.log('else curr quest'+currentQuestion);
     }
 }
 function showResult(){
-    const pointsArray = [gryffindorPoints,hufflepuffPoints,slytherinPoints,ravenclawPoints];
-    pointsArray.sort();
-    text.innerText = `Your house is ${pointsArray[0]}`
+    const pointsArray = [{
+        name: "Gryffindor",
+        points: gryffindorPoints
+        },
+        {
+        name: "Hufflepuff",
+        points: hufflepuffPoints
+        },
+        {
+        name: "Slytherin",
+        points: slytherinPoints
+        },
+        {
+        name: "Ravenclaw",
+        points: ravenclawPoints
+        }];
+    console.log(pointsArray);
+    const sort = (a,b)=>{
+        if(a.points>b.points){
+            return -1
+        } else if(a.points<b.points){
+            return 1
+        } else{
+            return 0
+        }
+    }
+    pointsArray.sort(sort);
+    console.log(pointsArray);
+    text.innerText = `Your house is ${pointsArray[0].name}!`
 }
