@@ -14,7 +14,7 @@ let slytherinPoints = 0;
 let ravenclawPoints = 0;
 let currentQuestion = 0;
 const buttons = [button1, button2, button3, button4, button5, button6]
-const choiceText = ["Good choice!", "Lovely!", "Merlin's beard!","You're a wizard!"]
+const choiceText = ["Good choice!", "Lovely!", "Merlin's beard!","You're a wizard!","Butterbeer's on me!", "Don't let the muggles get you down!","You have chosen wisely!","The hat approves.","I solemnly swear that's a fine choice."]
 const questions = [
     {
         name: "question1",
@@ -180,60 +180,60 @@ const questions = [
     },
     {
         name: "question4",
-        question: "What's your favourite beast?",
+        question: "What's your favourite place in Hogwarts?",
         answers: [
             {
-                button: "Dragon",
+                button: "Astronomy tower",
                 points: {
-                    gryffindor: 5,
+                    gryffindor: 0,
+                    hufflepuff: 0,
+                    slytherin: 0,
+                    ravenclaw: 10
+                }
+            },
+            {
+                button: "Dungeons",
+                points: {
+                    gryffindor: 0,
                     hufflepuff: 0,
                     slytherin: 10,
                     ravenclaw: 0
                 }
             },
             {
-                button: "Hyppogryff",
+                button: "Kitchens",
                 points: {
-                    gryffindor: 5,
-                    hufflepuff: 0,
-                    slytherin: 0,
-                    ravenclaw: 10
-                }
-            },
-            {
-                button: "Acromantula",
-                points: {
-                    gryffindor: 10,
-                    hufflepuff: 0,
-                    slytherin: 5,
-                    ravenclaw: 0
-                }
-            },
-            {
-                button: "Phoenix",
-                points: {
-                    gryffindor: 5,
+                    gryffindor: 0,
                     hufflepuff: 10,
                     slytherin: 0,
                     ravenclaw: 0
                 }
             },
             {
-                button: "Basilisk",
+                button: "Room of requirement",
                 points: {
                     gryffindor: 0,
                     hufflepuff: 0,
-                    slytherin: 15,
+                    slytherin: 0,
                     ravenclaw: 0
                 }
             },
             {
-                button: "Centaur",
+                button: "Gryffindor tower",
                 points: {
-                    gryffindor: 0,
-                    hufflepuff: 5,
+                    gryffindor: 10,
+                    hufflepuff: 0,
                     slytherin: 0,
-                    ravenclaw: 10
+                    ravenclaw: 0
+                }
+            },
+            {
+                button: "Quidditch pitch",
+                points: {
+                    gryffindor: 5,
+                    hufflepuff: 0,
+                    slytherin: 5,
+                    ravenclaw: 0
                 }
             }
         ]
