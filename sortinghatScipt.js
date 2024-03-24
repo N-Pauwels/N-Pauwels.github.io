@@ -132,7 +132,7 @@ const questions = [
         question: "A wild puffskein appears. What do you do?",
         answers: [
             {
-                button: "You now it's harmless, you leave it be.",
+                button: "You know it's harmless, you leave it be.",
                 points: {
                     gryffindor: 0,
                     hufflepuff: 5,
@@ -150,7 +150,7 @@ const questions = [
                 }
             },
             {
-                button: "Your reflexes get you to cast stupify.",
+                button: "Your reflexes drive you to cast stupify.",
                 points: {
                     gryffindor: 0,
                     hufflepuff: 0,
@@ -192,7 +192,7 @@ const questions = [
                 }
             },
             {
-                button: "Dungeons",
+                button: "Dungeons (I like it kinky)",
                 points: {
                     gryffindor: 0,
                     hufflepuff: 0,
@@ -522,7 +522,7 @@ function updateOnClick(current,j){
         console.log('slytherin' + slytherinPoints);
         ravenclawPoints += newArray[newSelection].points.ravenclaw;
         console.log('ravenclaw' + ravenclawPoints);
-        hatText.innerText = "The hat thanks you for your answer. However, it seems a dark wizard inteverned.";
+        hatText.innerText = "The hat thanks you for your answer. However, it seems a dark wizard intervened.";
         text.innerText = `You wanted to select selected ${questions[current].answers[j].button}. Yet, you seemed to be under the imperius curse and have selected ${newArray[newSelection].button} instead!`; 
     } else{
         gryffindorPoints += questions[current].answers[j].points.gryffindor;
