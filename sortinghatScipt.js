@@ -520,6 +520,90 @@ const questions = [
             }
         ]
     },
+    {
+        name: "question10",
+        question: "Where would you rather go on a roadtrip on your broom?",
+        answers: [
+            {
+                button: "Italy",
+                points: {
+                    gryffindor: 10,
+                    hufflepuff: 0,
+                    slytherin: 0,
+                    ravenclaw: 0
+                }
+            },
+            {
+                button: "Ireland",
+                points: {
+                    gryffindor: 0,
+                    hufflepuff: 10,
+                    slytherin: 20,
+                    ravenclaw: 0
+                }
+            },
+            {
+                button: "Norway",
+                points: {
+                    gryffindor: 0,
+                    hufflepuff: 0,
+                    slytherin: 0,
+                    ravenclaw: 10
+                }
+            },
+            {
+                button: "USA",
+                points: {
+                    gryffindor: 0,
+                    hufflepuff: 0,
+                    slytherin: 10,
+                    ravenclaw: 0
+                }
+            }
+        ]
+    },
+    {
+        name: "question11",
+        question: "Which magical reality show would you watch?",
+        answers: [
+            {
+                button: "Desperate Housewitches.",
+                points: {
+                    gryffindor: 0,
+                    hufflepuff: 10,
+                    slytherin: 0,
+                    ravenclaw: 0
+                }
+            },
+            {
+                button: "Hogwarts Shore.",
+                points: {
+                    gryffindor: 0,
+                    hufflepuff: 0,
+                    slytherin: 10,
+                    ravenclaw: 0
+                }
+            },
+            {
+                button: "Wizard seeks witch",
+                points: {
+                    gryffindor: 10,
+                    hufflepuff: 0,
+                    slytherin: 0,
+                    ravenclaw: 0
+                }
+            },
+            {
+                button: "Pimp my broom",
+                points: {
+                    gryffindor: 0,
+                    hufflepuff: 0,
+                    slytherin: 0,
+                    ravenclaw: 10
+                }
+            }
+        ]
+    },
 ]
 //initialize button 1
 button1.onclick = showQuestion;
@@ -530,8 +614,9 @@ function shuffleQuestion(questions){
         } else {
             return -1;
         }
-    })
-}
+    });
+    return questions;
+};
 
 function showQuestion(){
     gryffindorPoints = 0;
@@ -540,6 +625,7 @@ function showQuestion(){
     ravenclawPoints = 0;
     currentQuestion = 0;
     hatText.innerText = "The hat awaits your answer.";
+    shuffleQuestion(questions);
     text.innerText = questions[currentQuestion].question;
     updateButtons(currentQuestion);
 }
