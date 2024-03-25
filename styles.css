@@ -56,3 +56,11 @@ button:active {
 #button1{
   display: initial
 }
+@media (max-width: 1000px){
+  body{
+    font-size: 150%;
+  }
+  button{
+    font-size:150%;
+  }
+}
