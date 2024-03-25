@@ -14,7 +14,7 @@ let slytherinPoints = 0;
 let ravenclawPoints = 0;
 let currentQuestion = 0;
 const buttons = [button1, button2, button3, button4, button5, button6]
-const choiceText = ["Good choice!", "Lovely!", "Merlin's beard!","You're a wizard!","Butterbeer's on me!", "Don't let the muggles get you down!","You have chosen wisely!","The hat approves.","I solemnly swear that's a fine choice."]
+const choiceText = ["Good choice!", "Lovely!", "Merlin's beard!","You're a wizard!","Butterbeer's on me!", "Don't let the muggles get you down!","You have chosen wisely!","The hat approves.","I solemnly swear that's a fine choice.", "You're awesome!", "That's worth a chocolate frog!", "Bloody hell!", "The hat knew you'd say that.","What a great answer!"]
 const questions = [
     {
         name: "question1",
@@ -693,6 +693,7 @@ function nextQuestion(){
         currentQuestion++;
         console.log('else curr quest'+currentQuestion);
         text.innerText = questions[currentQuestion].question;
+        hatText.innerText = "The hat awaits your answer."
         updateButtons(currentQuestion);
     }
 }
