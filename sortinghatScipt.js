@@ -90,11 +90,11 @@ const questions = [
                 }
             },
             {
-                button: "Acromantula",
+                button: "Niels Pauwels",
                 points: {
-                    gryffindor: 10,
+                    gryffindor: 0,
                     hufflepuff: 0,
-                    slytherin: 5,
+                    slytherin: 0,
                     ravenclaw: 0
                 }
             },
@@ -474,6 +474,48 @@ const questions = [
                     hufflepuff: 5,
                     slytherin: 0,
                     ravenclaw: 5
+                }
+            }
+        ]
+    },
+    {
+        name: "question9",
+        question: "Dilemma time: What would you prefer?",
+        answers: [
+            {
+                button: "Have Dobby's clothing style.",
+                points: {
+                    gryffindor: 0,
+                    hufflepuff: 10,
+                    slytherin: 0,
+                    ravenclaw: 0
+                }
+            },
+            {
+                button: "Be the most powerful wizard, but look like Voldemort.",
+                points: {
+                    gryffindor: 0,
+                    hufflepuff: 0,
+                    slytherin: 20,
+                    ravenclaw: 0
+                }
+            },
+            {
+                button: "Knit a sweater out of Dumbledore's beard",
+                points: {
+                    gryffindor: 10,
+                    hufflepuff: 0,
+                    slytherin: 0,
+                    ravenclaw: 0
+                }
+            },
+            {
+                button: "Be as clumsy as Neville",
+                points: {
+                    gryffindor: 10,
+                    hufflepuff: 0,
+                    slytherin: 0,
+                    ravenclaw: 0
                 }
             }
         ]
