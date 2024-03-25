@@ -714,15 +714,7 @@ function showResult(){
         points: ravenclawPoints
         }];
     console.log(pointsArray);
-    const sort = (a,b)=>{
-        if(a.points>b.points){
-            return -1
-        } else if(a.points<b.points){
-            return 1
-        } else{
-            return 0
-        }
-    }
+    const sort = (a,b)=> b.points - a.points;
     pointsArray.sort(sort);
     console.log(pointsArray);
     hatText.innerText = "The hat reveals its decision.";
