@@ -608,13 +608,7 @@ const questions = [
 //initialize button 1
 button1.onclick = showQuestion;
 function shuffleQuestion(questions){
-    questions.sort(()=>{
-        if(Math.random()>0.5){
-            return 1;
-        } else {
-            return -1;
-        }
-    });
+    questions.sort(()=> Math.random()-0.5);
     return questions;
 };
 
