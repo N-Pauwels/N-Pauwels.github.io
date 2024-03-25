@@ -714,7 +714,7 @@ function showResult(){
     console.log(pointsArray);
     hatText.innerText = "The hat reveals its decision.";
     text.innerText = `Your house is ${pointsArray[0].name}! Click "Restart" if you want to try again.`
-    document.body.style.backgroundImage = `url('${pointsArray[0].name}.jpg')`;
+    document.body.style.backgroundImage = `url("../Images/${pointsArray[0].name}.jpg")`;
     button1.onclick = restart;
     button1.innerText = "Restart"
 }
@@ -723,4 +723,5 @@ function restart(){
     hatText.innerText = originalHatText;
     button1.innerText = "Continue";
     button1.onclick = showQuestion;
+    document.body.style.backgroundImage = 'url("../Images/hogwarts-crest-6dulenundf2dcvsb.jpg")'
 }
