@@ -502,7 +502,7 @@ const questions = [
                 }
             },
             {
-                button: "Always have to wear a knitted sweater out of Dumbledore's beard",
+                button: "Always have to wear a sweater that's knitted out of Dumbledore's beard.",
                 points: {
                     gryffindor: 10,
                     hufflepuff: 0,
@@ -511,7 +511,7 @@ const questions = [
                 }
             },
             {
-                button: "Be as clumsy as Neville",
+                button: "Be as clumsy as Neville.",
                 points: {
                     gryffindor: 10,
                     hufflepuff: 0,

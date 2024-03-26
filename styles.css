@@ -47,6 +47,7 @@ button {
   margin: max(0.2vw, 3px);
   display: none;
   font-size: min(2vw,40px);
+  text-align: left;
 }
 button:hover{
   background-color: rgb(214, 185, 18)
