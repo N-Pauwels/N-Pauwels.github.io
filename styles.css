@@ -5,6 +5,7 @@ body {
   background-repeat: repeat;
   background-position-y: 0%;
   font-size: min(2vw,40px);
+  background-size: contain;
 }
 
 #text {
