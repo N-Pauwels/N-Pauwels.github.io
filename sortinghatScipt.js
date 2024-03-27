@@ -301,62 +301,53 @@ const questions = [
     },
     {
         name: "question6",
-        question: "What's your favourite character?",
+        question: "What would you do if you were rich?",
         answers: [
             {
-                button: "Dumbledore",
+                button: "Rent Hogwarts for a big party.",
                 points: {
                     gryffindor: 10,
-                    hufflepuff: 5,
+                    hufflepuff: 0,
                     slytherin: 0,
                     ravenclaw: 5
                 }
             },
             {
-                button: "Voldemort",
+                button: "Build a mansion with view on Hogwarts Castle.",
                 points: {
                     gryffindor: 0,
-                    hufflepuff: 0,
-                    slytherin: 20,
+                    hufflepuff: 10,
+                    slytherin: 0,
                     ravenclaw: 0
                 }
             },
             {
-                button: "Sirius Black",
+                button: "Buy the Elder Wand.",
+                points: {
+                    gryffindor: 0,
+                    hufflepuff: 0,
+                    slytherin: 10,
+                    ravenclaw: 0
+                }
+            },
+            {
+                button: "Invest in shares of Gringott's bank.",
+                points: {
+                    gryffindor: 0,
+                    hufflepuff: 0,
+                    slytherin: 0,
+                    ravenclaw: 10
+                }
+            },
+            {
+                button: "Buy a dragon as a pet.",
                 points: {
                     gryffindor: 10,
                     hufflepuff: 0,
-                    slytherin: 0,
+                    slytherin: 10,
                     ravenclaw: 0
                 }
             },
-            {
-                button: "Cedric Diggory",
-                points: {
-                    gryffindor: 0,
-                    hufflepuff: 20,
-                    slytherin: 0,
-                    ravenclaw: 0
-                }
-            },
-            {
-                button: "Luna Lovegood",
-                points: {
-                    gryffindor: 0,
-                    hufflepuff: 0,
-                    slytherin: 0,
-                    ravenclaw: 10
-                }
-            },
-            {
-                button: "Gilderoy Lockhart",
-                points: {
-                    gryffindor: 0,
-                    hufflepuff: 0,
-                    slytherin: 0,
-                    ravenclaw: 10
-                }
-            }
         ]
     },
     {
@@ -511,12 +502,21 @@ const questions = [
                 }
             },
             {
-                button: "Be as clumsy as Neville.",
+                button: "Turn everyone looking into your eyes into stone.",
                 points: {
                     gryffindor: 10,
                     hufflepuff: 0,
-                    slytherin: 0,
+                    slytherin: 10,
                     ravenclaw: 0
+                }
+            },
+            {
+                button: "Have infinite knowledge, but you're not able to share any knowledge with anyone.",
+                points: {
+                    gryffindor: 0,
+                    hufflepuff: 0,
+                    slytherin: 0,
+                    ravenclaw: 20
                 }
             }
         ]
