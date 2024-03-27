@@ -4,8 +4,9 @@ body {
   background-position-x: center;
   background-repeat: repeat;
   background-position-y: 0%;
-  font-size: min(2vw,40px);
+  font-size: min(4vw,40px);
   background-size: min(100vw,1017px);
+  margin: auto;
 }
 
 #text {
@@ -17,11 +18,11 @@ body {
 #game {
   max-width: 1000px;
   max-height: 450px;
-  width: 95vw;
+  width: 92vw;
   height: auto;
   background: linear-gradient(90deg, rgb(126, 24, 7), rgb(158, 146, 7), rgb(4, 93, 16),rgb(7, 67, 115));
   color: #ffffff;
-  margin: 22% auto 0px;
+  margin: 22% auto;
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -47,7 +48,7 @@ button {
   border: 3px solid #feac32;
   margin: max(0.2vw, 3px);
   display: none;
-  font-size: min(2vw,40px);
+  font-size: min(2vw,30px);
   text-align: left;
 }
 button:hover{
@@ -60,11 +61,11 @@ button:active {
 #button1{
   display: initial
 }
-@media (max-width: 1000px){
+@media (max-width: 700px){
   body{
-    font-size: 150%;
+    font-size: max(4vw,20px);
   }
   button{
-    font-size:100%;
+    font-size:max(2vw,15px);
   }
 }
