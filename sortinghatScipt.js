@@ -151,7 +151,7 @@ const questions = [
                 }
             },
             {
-                button: "Your reflexes drive you to cast stupify.",
+                button: "You startle and cast stupify.",
                 points: {
                     gryffindor: 0,
                     hufflepuff: 0,
